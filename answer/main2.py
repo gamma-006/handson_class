@@ -1,9 +1,11 @@
 """
 課題2: 課題1に習って、mainファイルを作成
 """
+
 import os
 from machine import Machine
 from utils import load_json, save_dict_to_json
+
 
 def main():
     # 商品と購入物のファイル名
@@ -34,7 +36,7 @@ def main():
     # jsonへ書き出し
     output_path = current_dir + "/data/out/change.json"
     save_dict_to_json(change_dict, output_path)
-    
+
 
 if __name__ == "__main__":
-    main() 
+    main()

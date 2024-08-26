@@ -2,6 +2,7 @@ import os
 from machine import Machine
 from utils import load_json
 
+
 def main():
     # 商品と購入物のファイル名
     item_table_name = "item_table_1.json"
@@ -20,5 +21,6 @@ def main():
     # 金額の表示
     machine.display_total_amount()
 
+
 if __name__ == "__main__":
-    main() 
+    main()
