@@ -10,7 +10,7 @@ class Machine:
         for item_name, num_of_items in products.items():
             self.total_amount += self.item_list[item_name] * num_of_items
 
-    def display_total_amount(self) -> int:
+    def display_total_amount(self) -> None:
         """
         課題１：ここを記述する。
         """

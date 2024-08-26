@@ -9,7 +9,7 @@ class Machine:
         """
         raise NotImplementedError
     
-    def display_total_amount(self) -> int:
+    def display_total_amount(self) -> None:
         """
         課題１：ここを記述する。
         """
