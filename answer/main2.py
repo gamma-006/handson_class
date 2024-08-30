@@ -14,9 +14,9 @@ def main():
     money_name = "money_1.json"
     # 読み込みのためのパスの設定
     current_dir = os.getcwd()
-    item_table_path = current_dir + "/data/in/item_tables/" + item_table_name
-    product_table_path = current_dir + "/data/in/shopping_data/" + products_name
-    money_path = current_dir + "/data/in/money_data/" + money_name
+    item_table_path = current_dir + "/handson_class/answer/data/in/item_tables/" + item_table_name
+    product_table_path = current_dir + "/handson_class/answer/data/in/shopping_data/" + products_name
+    money_path = current_dir + "/handson_class/answer/data/in/money_data/" + money_name
     # データの読み込み
     item_table = load_json(item_table_path)
     products = load_json(product_table_path)
@@ -34,7 +34,7 @@ def main():
     # おつりの紙幣と硬貨の枚数を
     change_dict = machine.output_change()
     # jsonへ書き出し
-    output_path = current_dir + "/data/out/change.json"
+    output_path = current_dir + "/handson_class/answer/data/out/change.json"
     save_dict_to_json(change_dict, output_path)
 
 

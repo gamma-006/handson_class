@@ -9,8 +9,8 @@ def main():
     products_name = "products_table_1.json"
     # 読み込みのためのパスの設定
     current_dir = os.getcwd()
-    item_table_path = current_dir + "/data/in/item_tables/" + item_table_name
-    product_table_path = current_dir + "/data/in/shopping_data/" + products_name
+    item_table_path = current_dir + "/handson_class/data/in/item_tables/" + item_table_name
+    product_table_path = current_dir + "/handson_class/data/in/shopping_data/" + products_name
     # データの読み込み
     item_table = load_json(item_table_path)
     products = load_json(product_table_path)
